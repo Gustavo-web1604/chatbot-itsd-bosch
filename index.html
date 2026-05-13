@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatBot ITSD | Bosch</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <span class="logo-text">BOSCH</span>
+  </div>
+  
+  <h1>ChatBot ITSD</h1>
+  
+  <div class="header-right">
+    <div class="status-dot">
+      <div class="dot-live"></div> Online
+    </div>
+  </div>
+</header>
+
+<div id="chat"></div>
+
+<footer>
+  <textarea id="inp" rows="1" placeholder="Descreva seu problema..."></textarea>
+  <button class="btn btn-clear" onclick="clearChat()">Limpar chat</button>
+  <button class="btn btn-send" id="sbtn" onclick="send()">Enviar</button>
+</footer>
+
+<script src="dados.js" charset="UTF-8"></script>
+
+<script src="script.js" charset="UTF-8"></script>
+</body>
+</html>
